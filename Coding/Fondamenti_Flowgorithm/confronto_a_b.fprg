@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="elpen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-11 07:43:52 "/>
+        <attribute name="created" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDU7IjExOjM0OjM1ICI7MjgyNg=="/>
+        <attribute name="edited" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMTE7IjA3OjQzOjUyICI7MzsyOTM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci un valore per a: &quot;" newline="False"/>
+            <input variable="a"/>
+            <output expression="&quot;Inserisci un valore per b: &quot;" newline="False"/>
+            <input variable="b"/>
+            <if expression="a &gt; b">
+                <then>
+                    <output expression="&quot;a &#232; il valore pi&#249; grande&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;b &#232; il valore pi&#249; grande&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

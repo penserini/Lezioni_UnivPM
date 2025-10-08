@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="elpen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-04 11:14:13 "/>
+        <attribute name="created" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjUtMTAtMDQ7IjExOjAxOjA2ICI7MjgxNA=="/>
+        <attribute name="edited" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjUtMTAtMDQ7IjExOjE0OjEzICI7MTsyOTI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="nReale" type="Real" array="False" size=""/>
+            <output expression="&quot;Specifica il numero degli elemnti di INPUT: &quot;" newline="False"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i &lt; n+1">
+                <output expression="&quot;Inserisci il &quot; &amp; i &amp; &quot;&#176; elemento: &quot;" newline="False"/>
+                <input variable="nReale"/>
+                <assign variable="nReale" expression="nReale * nReale"/>
+                <output expression="&quot;Quadrato del &quot; &amp; i &amp; &quot;&#176; numero inserito &#232;: &quot; &amp;nReale" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
