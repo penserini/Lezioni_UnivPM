@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="elpen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-07 08:30:10 "/>
+        <attribute name="created" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMTE7IjAxOjEyOjE0ICI7MjgxNQ=="/>
+        <attribute name="edited" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjUtMTAtMDc7IjA4OjMwOjEwICI7NzsyOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base" type="Real" array="False" size=""/>
+            <declare name="esp, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci base: &quot;" newline="False"/>
+            <input variable="base"/>
+            <output expression="&quot;Inserisci l'esponente: &quot;" newline="False"/>
+            <input variable="esp"/>
+            <if expression="esp &gt;= 0">
+                <then>
+                    <assign variable="potenza" expression="Exp(base, esp)"/>
+                    <output expression="&quot;L'elevamento a potenza risulta: &quot; &amp; potenza" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+    <function name="Exp" type="Real" variable="potenza">
+        <parameters>
+            <parameter name="base" type="Real" array="False"/>
+            <parameter name="esp" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="potenza" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="potenza" expression="1"/>
+            <for variable="i" start="esp" end="1" direction="dec" step="1">
+                <assign variable="potenza" expression="potenza * base"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

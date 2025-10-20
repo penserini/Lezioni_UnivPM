@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="elpen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-08 09:03:44 "/>
+        <attribute name="created" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDg7IjA4OjAzOjA0ICI7MjgyNw=="/>
+        <attribute name="edited" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDg7IjA5OjAzOjQ0ICI7NDsyOTQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="min, max, temp" type="Real" array="False" size=""/>
+            <declare name="str" type="String" array="False" size=""/>
+            <declare name="ntemp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digita il numero delle temperature: &quot;" newline="False"/>
+            <input variable="ntemp"/>
+            <output expression="&quot;Inserisci una temperatura: &quot;" newline="False"/>
+            <input variable="temp"/>
+            <assign variable="min" expression="temp"/>
+            <assign variable="max" expression="temp"/>
+            <while expression="ntemp &gt; 1">
+                <output expression="&quot;Inserisci una temperatura: &quot;" newline="False"/>
+                <input variable="temp"/>
+                <if expression="min &gt; temp">
+                    <then>
+                        <assign variable="min" expression="temp"/>
+                    </then>
+                    <else>
+                        <if expression="max &lt; temp">
+                            <then>
+                                <assign variable="max" expression="temp"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="ntemp" expression="ntemp - 1"/>
+            </while>
+            <output expression="&quot;La temperatura minima risulta temp = &quot; &amp; min" newline="True"/>
+            <output expression="&quot;La temperatura massima risulta temp = &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

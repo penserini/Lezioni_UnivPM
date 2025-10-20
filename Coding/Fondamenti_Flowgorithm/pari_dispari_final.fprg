@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="elpen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-09 09:31:43 "/>
+        <attribute name="created" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDk7IjA5OjI1OjIwICI7MjgzMQ=="/>
+        <attribute name="edited" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDk7IjA5OjMxOjQzICI7MTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digita un numero intero positivo: &quot;" newline="False"/>
+            <input variable="num"/>
+            <while expression="num &gt; 1">
+                <assign variable="num" expression="num - 2"/>
+            </while>
+            <if expression="num == 0">
+                <then>
+                    <output expression="&quot;Il numero inserito &#232; PARI&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il numero inserito &#232; DISPARI&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

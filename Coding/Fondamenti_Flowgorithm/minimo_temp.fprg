@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="elpen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-08 10:26:53 "/>
+        <attribute name="created" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDg7IjEwOjAyOjE0ICI7MjgyMA=="/>
+        <attribute name="edited" value="ZWxwZW47REVTS1RPUC1UQUhNR1BIOzIwMjItMDctMDg7IjEwOjI2OjUzICI7NTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ris" type="String" array="False" size=""/>
+            <declare name="min, temp" type="Real" array="False" size=""/>
+            <assign variable="min" expression="100"/>
+            <do expression="ris == &quot;S&quot; || ris == &quot;s&quot;">
+                <output expression="&quot;Inserisci una temperatura: &quot;" newline="False"/>
+                <input variable="temp"/>
+                <if expression="min &gt; temp">
+                    <then>
+                        <assign variable="min" expression="temp"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Vuoi inserire un'altra temperatura (S/N)? &quot;" newline="False"/>
+                <input variable="ris"/>
+            </do>
+            <output expression="&quot;La temperatura minima risulta temp = &quot;&amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
